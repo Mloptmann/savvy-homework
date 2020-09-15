@@ -1,4 +1,7 @@
 const pizzaToppings = ["Pepperoni", "Sausage", "Chicken", "Pineapple"];
-for (let pizzaTopping of pizzaToppings) {
-  console.log(pizzaTopping);
-}
+
+console.log(
+  "Welcome to the Pizza House we have",
+  pizzaToppings,
+  "for your topping options."
+);
