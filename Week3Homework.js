@@ -1,30 +1,43 @@
-const pizzaToppings = [" Pepperoni", " Sausage", " Chicken", " Pineapple"];
+const pizzaToppings = ["Pepperoni", "Sausage", "Chicken", "Pineapple"];
 
 //Greet Customer
-function greetCustomer() {
-  return `Hello we offer${pizzaToppings.toString()} for your topping choices.`;
+console.log("Welcome your Pizza toppings choices are:");
+for (let toppingsList of pizzaToppings) {
+  console.log(toppingsList);
 }
-
-console.log(greetCustomer());
-
 //Get Pizza Order
+const getPizzaOrder = {
+  size: ["Small", "Medium", "Large"],
+  crust: ["Thin", "Normal", "Pan"],
+  toppings: []
+};
 
-function getPizzaOrder(size, crustType, pizzaToppings) {
-  return `One ${size}, ${crustType} with${pizzaToppings} coming up!`;
-}
+console.log(
+  "Your",
+  getPizzaOrder.size[1],
+  getPizzaOrder.crust[0],
+  "crust pizza with",
+  pizzaToppings[1],
+  pizzaToppings[3],
+  "is cooking!"
+);
 
-console.log(getPizzaOrder("large", "Thin Crust", ...pizzaToppings));
+console.log(getPizzaOrder);
 
 //Prepare Pizza
-function preparePizza(size, crustType, pizzaToppings) {
-  return `Cooking a ${size}, ${crustType} with${pizzaToppings}.`;
-}
+const preparePizza = {
+  size: "Medium",
+  crust: "Thin Crust",
+  toppings: "Sausage & Pineapple"
+};
 
-console.log(preparePizza("large", "Thin Crust", ...pizzaToppings));
+console.log("...Coming up...");
+
+console.log(preparePizza);
 
 //Serve Pizza
-function servePizza(size, crustType, pizzaToppings) {
-  return `Here's your ${size}, ${crustType} with${pizzaToppings}. Enjoy!`;
-}
+const pizza = [preparePizza.size, preparePizza.crust, preparePizza.toppings];
 
-console.log(servePizza("large", "Thin Crust", ...pizzaToppings));
+console.log("Ding it's ready!");
+
+console.log("Your", pizza, "Pizza is ready. Enjoy!");
