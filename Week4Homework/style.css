@@ -1,0 +1,92 @@
+body {
+  background-color: ivory;
+  border-style: groove;
+  border-width: thick;
+  max-width: 800px;
+}
+header {
+  font-family: 'Press Start 2P';
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+  width: 750px;
+  background-color: rgb(252, 50, 0);
+
+}
+
+ul {
+  column-count: 3;
+  outline-style: double;
+  outline-color: rgb(252, 50, 0);
+  margin-left: 20px;
+  width: 700px;
+}
+
+li{
+  list-style-type: none;
+  margin-left: 50px;
+  padding: 5px;
+  width: 700px;
+}
+
+li:hover {
+  color: rgb(252, 50, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.center {
+  width: 700px;
+  font-family: lato;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.head {
+  font-family: Metamorphous;
+  padding-left: 20px;
+  padding-right: 50px;
+  width: 700px;
+}
+
+.subhead {
+  font-family: lato;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 700px;
+}
+
+#para {
+  width: 700px;
+  font-family: lato;
+  padding-left: 50px;
+  padding-right: 200px;
+}
+
+a {
+  font-family: Metamorphous;
+}
+
+a:hover {
+  color: rgb(252, 50, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#image {
+  height: 350px;
+  padding-left: 50px;
+}
+
+#image2 {
+  height: 325px;
+  padding-left: 20px;
+}
+
+
+
+
